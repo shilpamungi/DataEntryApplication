@@ -1,0 +1,21 @@
+<div *ngIf="message" class="success-message">{{ message }}</div>
+
+<h2>List of Persons</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+	  <th>Title</th>
+	  <th>Hometown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of userData">
+      <td>{{ person.name }}</td>
+      <td>{{ person.age }}</td>
+	  <td>{{ person.title }}</td>
+	  <td>{{ person.hometown }}</td>
+    </tr>
+  </tbody>
+</table>
